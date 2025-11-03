@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anime Poster</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url(/images/madara.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        body::before {
+            position: absolute;
+            width: min(1400px, 90vw);
+            top: 10%;
+            left: 50%;
+            height: 90%;
+            transform: translateX(-50%);
+            content: '';
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: top center;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative h-full w-full bg-slate-950">
+        <div
+            class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
+        </div>
+        <div class="circle">
+            <div class="slider" style="--quantity: 10">
+                <div class="item" style="--position: 1 "><img style="border-radius: 10px;" src="/images/ichigo2.jpeg"
+                        alt=""></div>
+                <div class="item" style="--position: 2 "><img style="border-radius: 10px;" src="/images/luffy.jpeg"
+                        alt=""></div>
+                <div class="item" style="--position: 3 "><img style="border-radius: 10px;" src="/images/itachi.jpg"
+                        alt=""></div>
+                <div class="item" style="--position: 4 "><img style="border-radius: 10px;" src="/images/goku2.jpg"
+                        alt=""></div>
+                <div class="item" style="--position: 5 "><img style="border-radius: 10px;" src="/images/Zoro.jpg"
+                        alt=""></div>
+                <div class="item" style="--position: 6 "><img style="border-radius: 10px;" src="/images/Sakuna.jpg"
+                        alt=""></div>
+                <div class="item" style="--position: 7 "><img style="border-radius: 10px;" src="/images/Naruto.jpg"
+                        alt=""></div>
+                <div class="item" style="--position: 8 "><img style="border-radius: 10px;" src="/images/levi.jpg"
+                        alt=""></div>
+                <div class="item" style="--position: 9 "><img style="border-radius: 10px;" src="/images/eren.jpg"
+                        alt=""></div>
+                <div class="item" style="--position: 10"><img style="border-radius: 10px" 10px; src="/images/Ichigo.jpg"
+                        alt=""></div>
+            </div>
+            <div class="content">
+                <h1 data-content="Anime Poster">Anime Poster</h1>
+                <div class="author" style="padding-left: 35px; margin-bottom:  50px ;">
+                    <h2>Shubh</h2>
+                    <p><b>Developer</b></p>
+                    <p>Just a dev who loves to bluid</p>
+                </div>
+                <div class="model"></div>
+            </div>
+        </div>
+
+</body>
+
+</html>
