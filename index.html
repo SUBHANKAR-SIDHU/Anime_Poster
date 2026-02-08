@@ -4,76 +4,241 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Anime Poster</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            background-image: url(images/poster-bg.png);
-            background-repeat: no-repeat;
-            background-size: cover;
-        }
-
-        body::before {
-            position: absolute;
-            width: min(1400px, 90vw);
-            top: 10%;
-            left: 50%;
-            height: 90%;
-            transform: translateX(-50%);
-            content: '';
-            background-size: 100%;
-            background-repeat: no-repeat;
-            background-position: top center;
-            pointer-events: none;
-        }
-    </style>
 </head>
 
 <body>
-    <div class="relative h-full w-full bg-slate-950">
-        <div
-            class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
-        </div>
-        <div class="circle">
-            <div class="slider" style="--quantity: 10">
-                <div class="item" style="--position: 1 "><img style="border-radius: 10px;" src="images/ichigo2.jpeg"
-                        alt=""></div>
-                <div class="item" style="--position: 2 "><img style="border-radius: 10px;" src="images/luffy.jpeg"
-                        alt=""></div>
-                <div class="item" style="--position: 3 "><img style="border-radius: 10px;" src="images/itachi.jpg"
-                        alt=""></div>
-                <div class="item" style="--position: 4 "><img style="border-radius: 10px;" src="images/goku2.jpg"
-                        alt=""></div>
-                <div class="item" style="--position: 5 "><img style="border-radius: 10px;" src="images/Zoro.jpg"
-                        alt=""></div>
-                <div class="item" style="--position: 6 "><img style="border-radius: 10px;" src="images/Sakuna.jpg"
-                        alt=""></div>
-                <div class="item" style="--position: 7 "><img style="border-radius: 10px;" src="images/Naruto.jpg"
-                        alt=""></div>
-                <div class="item" style="--position: 8 "><img style="border-radius: 10px;" src="images/levi.jpg"
-                        alt=""></div>
-                <div class="item" style="--position: 9 "><img style="border-radius: 10px;" src="images/madara.jpeg"
-                        alt=""></div>
-                <div class="item" style="--position: 10"><img style="border-radius: 10px" 10px; src="images/Ichigo.jpg"
-                        alt=""></div>
-            </div>
-            <div class="content">
-                <h1 data-content="Anime Poster">Anime Poster</h1>
-                <div class="author" style="padding-left: 35px; margin-bottom:  50px ;">
-                    <h2>Shubh</h2>
-                    <p><b>Developer</b></p>
-                    <p>Just a dev who loves to build</p>
+    <div id="smooth-wrapper">
+        <div id="smooth-content">
+            <div class="relative h-[90vh] w-full bg-slate-950">
+                <div
+                    class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]">
                 </div>
-                <div class="model"></div>
+                <div class="circle">
+                    <div class="slider" style="--quantity: 10">
+                        <div class="item" style="--position: 1 "><img style="border-radius: 10px;"
+                                src="images/Inosuke.jpg" alt=""></div>
+                        <div class="item" style="--position: 2 "><img style="border-radius: 10px;"
+                                src="images/mitsuri ♡.jpg" alt=""></div>
+                        <div class="item" style="--position: 3 "><img style="border-radius: 10px;"
+                                src="images/obanai.jpg" alt=""></div>
+                        <div class="item" style="--position: 4 "><img style="border-radius: 10px;"
+                                src="images/Giyuu.jpg" alt=""></div>
+                        <div class="item" style="--position: 5 "><img style="border-radius: 10px;"
+                                src="images/Sanemi.jpg" alt="">
+                        </div>
+                        <div class="item" style="--position: 6 "><img style="border-radius: 10px;"
+                                src="images/Nezuko.jpg" alt=""></div>
+                        <div class="item" style="--position: 7 "><img style="border-radius: 10px;"
+                                src="images/Muichiro.jpg" alt=""></div>
+                        <div class="item" style="--position: 8 "><img style="border-radius: 10px;"
+                                src="images/Zenitsu.jpg" alt="">
+                        </div>
+                        <div class="item" style="--position: 9 "><img style="border-radius: 10px;"
+                                src="images/Gyomei.jpg" alt=""></div>
+                        <div class="item" style="--position: 10"><img style="border-radius: 10px" 10px;
+                                src="images/shinobu.jpg" alt=""></div>
+                    </div>
+                    <div class="content">
+                        <h1 data-content="Anime Poster">Anime Poster</h1>
+                        <div class="author" style="padding-left: 35px; margin-bottom:  50px ;">
+                            <h2>Shubh</h2>
+                            <p><b>Developer</b></p>
+                            <p>Just a dev who loves to build</p>
+                        </div>
+                        <div class="model"></div>
+                    </div>
+                </div>
+                <section class="page2" style="background-color: black;">
+                    <div class="cards">
+                        <h1>
+                            <span><img src="pic1.jpg" alt="">
+                                <p>Giyu Tomioka</p>
+                                <h4>The <span>Water Hashira </span>who first encounters Tanjiro and <br> Nezuko, he
+                                    plays a
+                                    crucial role in their journey.
+                                </h4>
+                                <h3><span>Water Hashira</span></h3>
+                            </span>
+                        </h1>
+                        <h1><span><img src="pic2.jpg" alt="">
+                                <p>Tengen Uzui</p>
+                                <h4>A <span style="color: rgb(87, 126, 87);">Breathing Style</span> that Tengen created
+                                    himself
+                                    <br> The user holds their twin swords.
+                                </h4>
+                                <h3><span style="color: rgb(87, 126, 87);">Sound Hashira</span></h3>
+                            </span></h1>
+                        <h1><span><img src="pic3.jpg" alt="">
+                                <p>Tanjiro Kamado</p>
+                                <h4>The main<span style="color :rgb(255, 60, 60);"> protagonist </span> of Demon Slayer:
+                                    Kimetsu
+                                    no Yaiba. <br> He is a Demon Slayer in the Demon Slayer Corps.
+                                </h4>
+                                <h3><span style="color: rgb(255, 60, 60);">Sun Breathing</span></h3>
+                            </span></h1>
+                        <h1><span><img src="pic4.jpg" alt="">
+                                <p>Sanemi Shinazugawa</p>
+                                <h4>A <span style="color: rgb(45, 184, 45);">Wind Breathing </span>Sanemi is abrasive,
+                                    hot-blooded, rash,<br> and stubborn, often times impulsive and quick to lash out.
+                                </h4>
+                                <h3><span style="color: rgb(45, 184, 45);">Wind Hashira</span></h3>
+                            </span></h1>
+                        <h1><span><img src="pic5.jpg" alt="">
+                                <p>Mitsuri Kanroji</p>
+                                <h4>A <span style="color:pink;">love Hashira </span>of the Demon Slayer Corps, Mitsuri
+                                    is a very
+                                    <br>powerful and skilled combatant
+                                </h4>
+                                <h3><span style="color: pink;">Love Hashira</span></h3>
+                            </span></h1>
+                        <h1><span><img src="pic6.jpg" alt="">
+                                <p>Obanai Iguro</p>
+                                <h4>A <span style="color:#8e84ad;">Serpent Hashira </span> Obanai was one of the most
+                                    powerful
+                                    and
+                                    <br> skilled swordsmen in the entire organization
+                                </h4>
+                                <h3><span style="color: #8e84ad;">Serpent Hashira</span></h3>
+                            </span></h1>
+                        <h1><span><img src="pic7.jpg" alt="">
+                                <p>Zenitsu Agatsuma</p>
+                                <h4>A <span style="color:#0cfd20;">Thunder Breathing</span> Zenitsu comes off as a
+                                    talented and
+                                    <br> skilled Demon Slayer, though he denies this
+                                </h4>
+                                <h3><span style=" margin-left: 5%;color: #0cfd20;">Thunder Breathing</span></h3>
+                            </span></h1>
+                    </div>
+                </section>
+                <section class="page3">
+                    <h1>DEMONS - UPPER MOON </h1>
+                    <div class="container">
+                        <div class="cardLeft">
+                            <h1>ANTAGONIST</h1>
+                            <p>Muzan Kibutsuji (鬼き舞ぶ辻つじ 無む惨ざん Kibutsuji Muzan?) is the main antagonist of Demon Slayer:
+                                Kimetsu
+                                no Yaiba. He is the Demon King, the progenitor of all other demons in existence, and the
+                                leader
+                                of the Twelve Kizuki, an organization made up of the twelve strongest demons under his
+                                direct
+                                command.
+                            </p>
+                        </div>
+                        <div class="cardRight">
+                            <img src="poseImages/Muzan.webp" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="page3">
+                    <div class="container-1">
+                        <div class="cardLeft">
+                            <h1>UPPER MOON 1</h1>
+                            <p>Kokushibo (黒こく死し牟ぼう Kokushibō?) is a major supporting antagonist of Demon Slayer: Kimetsu
+                                no
+                                Yaiba. He is a demon affiliated with the Twelve Kizuki, holding the highest position,
+                                Upper Rank
+                                One (上じょう弦げんの壱いち Jōgen no Ichi?)
+                            </p>
+                        </div>
+                        <div class="cardRight">
+                            <img src="poseImages/Kokushibo.webp" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="page3">
+                    <div class="container-2">
+                        <div class="cardLeft">
+                            <h1>UPPER MOON 2</h1>
+                            <p>
+                                Doma (童どう磨ま Dōma?) is a major supporting antagonist of Demon Slayer: Kimetsu no Yaiba.
+                                He is a
+                                demon affiliated with the Twelve Kizuki, holding the second highest position, Upper Rank
+                                Two
+                                (上じょう弦げんの弐に Jōgen no Ni?)
+                            </p>
+                        </div>
+                        <div class="cardRight">
+                            <img src="poseImages/Doma.webp" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="page3">
+                    <div class="container-3">
+                        <div class="cardLeft">
+                            <h1>UPPER MOON 3</h1>
+                            <p>
+                                Akaza (猗あ窩か座ざ Akaza?) was a major supporting antagonist of Demon Slayer: Kimetsu no
+                                Yaiba. He
+                                was a demon affiliated with the Twelve Kizuki, who held the position of Upper Rank Three
+                                (上じょう弦げんの参さん Jōgen no San?)
+                            </p>
+                        </div>
+                        <div class="cardRight">
+                            <img src="poseImages/Akaza.webp" alt="">
+                        </div>
+                    </div>
+                </section>
+                <section class="page3">
+                    <div class="container-4">
+                        <div class="cardLeft">
+                            <h1>UPPER MOON 4</h1>
+                            <p>
+                                Nakime (鳴なき女め Nakime?) is a recurring character and a supporting antagonist in the
+                                Infinity
+                                Castle Arc of Demon Slayer: Kimetsu no Yaiba. She is a demon who owns and controls the
+                                Infinity
+                                Castle and serves directly under Muzan Kibutsuji.
+                            </p>
+                        </div>
+                        <div class="cardRight">
+                            <img src="poseImages/Nakime.webp" alt="">
+                        </div>
+                    </div>
+                </section>
             </div>
+            <footer class="anime-footer">
+                <div class="footer-grid">
+                    <div class="footer-about">
+                        <h3>AnimeWorld</h3>
+                        <p>Where your favourite worlds come alive!</p>
+                    </div>
+
+                    <div class="footer-links">
+                        <h4>Explore</h4>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Anime List</a></li>
+                            <li><a href="#">Genres</a></li>
+                            <li><a href="#">Characters</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-social">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons">
+                            <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                            <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+                            <a href="#"><img src="icons/linkedin.svg" alt="Twitter"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <h2>Lot's of love ❤️</h2>
+                    <p>&copy; 2026 DemonWorld. All rights reserved. </p>
+                </div>
         </div>
 
+        </footer>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/gsap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollTrigger.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gsap@3.14.1/dist/ScrollSmoother.min.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
